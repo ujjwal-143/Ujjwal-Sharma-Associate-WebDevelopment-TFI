@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+   
+    <link rel="stylesheet" href="styles.css">
+     
+    <!--Iconscout CSS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
+
+    <title>Regisration Form </title> 
+
+</head>
+
+<body>
+
+
+    <h5 class="teachforindia-logo"><a  style="text-decoration: none" href="https://www.teachforindia.org/" target="_blank">Teach<span class="for-span">For</span>India</a> </h5>
+    
+
+    <div class="container">
+        <header>Registration</header>
+
+        <form action="connect.php" method="post">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title" name="personalDetails">Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" name="fullName" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" name="DateOfBirth" placeholder="Enter birth date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="tel" placeholder="Enter mobile number" name="mobileNumber" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select required>
+                                <option disabled selected>Select gender</option>
+                                <option for="gender" value="male" name="male">Male</option>
+                                <option value="female" name="female">Female</option>
+                                <option value="others" name="others">Others</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Occupation</label>
+                            <input type="text" name="occupation" placeholder="Your Occupation Ex: Student,Job." required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Volunteer Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Your Interest</label>
+                            <input type="text" name="interests" placeholder="Classroom Interests" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Location</label>
+                            <input type="location" name="location" placeholder="Enter Prefered Location" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Language</label>
+                            <input type="text" name="language" placeholder="Enter Language you Speak" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Availability</label>
+                            
+                            <select required>
+                                <option disabled selected>From when are you available to join</option>
+                                <option value="immediate" name="immediate">Immediate</option>
+                                <option value="within1week" name="within1week">Within 1 week</option>
+                                <option value="in15Days" name="in15Days">In 15 Days</option>
+                                <option value="1Month" name="1Month">1 Month</option>
+                            </select>
+                        </div>
+
+
+                        <div class="input-field">
+                            <label>Days you are available to support the class</label>
+                            <input type="text" name="availability-to-support-class" placeholder="Ex Sunday,Monday." required>
+                        </div>
+
+                        
+
+
+
+                    </div>
+
+                    <button class="nextBtn">
+                        <span class="btnText">Next</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div> 
+            </div>
+
+            <div class="form second">
+                <div class="details address">
+                    <span class="title">Address Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Address Type</label>
+                            <select required>
+                                <option disabled selected>Select Address</option>
+                                <option value="permanent" name="permanent">Permanent</option>
+                                <option value="temporary" name="temporary">Temporary</option>
+                            </select>
+
+                            
+                        </div>
+
+
+                        <div class="input-field">
+                            <label>H.No, Building No, Area </label>
+                            <input type="text" name="address" placeholder="Enter your Address" required>
+                        </div>
+
+
+                        <div class="input-field">
+                            <label>Nationality</label>
+                            <input type="text" name="nationality" placeholder="Enter nationality" required>
+                        </div>
+
+
+                        <div class="input-field">
+                            <label>City</label>
+                            <input type="text" name="city" placeholder="Enter your City" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>State</label>
+                            <input type="text" name="state" placeholder="Enter your state" required>
+                        </div>
+
+
+
+                        <div class="input-field">
+                            <label>Zip Code</label>
+                            <input type="text" name="zipCode" placeholder="Enter your City Zip Code" required>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="details family">
+                    <span class="title">Family Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Father Name</label>
+                            <input type="text" name="fatherName" placeholder="Enter father name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mother Name</label>
+                            <input type="text" name="motherName" placeholder="Enter mother name" required>
+                        </div>
+                    </div>
+
+                    <div class="buttons">
+                        <div class="backBtn">
+                            <i class="uil uil-navigator"></i>
+                            <span class="btnText">Back</span>
+                        </div>
+                        
+                        <button class="sumbit">
+                            <span class="btnText">Submit</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                    </div>
+                </div> 
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
